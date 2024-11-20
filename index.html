@@ -6,27 +6,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="details.js" defer></script>
-    <title>Details</title>
+    <script src="script.js" defer></script>
+    <title>Jal Sewak</title>
 </head>
 <body>
     <div class="header">
-        <div id="metric-title">Metric Details</div>
+        <div>Jal Sewak</div>
     </div>
     <div class="content">
+        <div class="overall-quality">
+            <h2>Overall Water Quality</h2>
+            <p id="overall-quality">Calculating...</p>
+        </div>
         <div class="data-row">
-            <div class="data-container">
-                <canvas id="dailyChart"></canvas>
-                <h3>Daily Data</h3>
+            <div class="data-container" onclick="openDetails('ph')">
+                <canvas id="phChart"></canvas>
+                <p id="ph">PH: Loading...</p>
             </div>
-            <div class="data-container">
-                <canvas id="weeklyChart"></canvas>
-                <h3>Weekly Data</h3>
+            <div class="data-container" onclick="openDetails('tds')">
+                <canvas id="tdsChart"></canvas>
+                <p id="tds">TDS: Loading...</p>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <p>Created by Adarsh Srivaatav, Arpit Chaturvedi, Abhinandan, Adarika</p>
+        <div class="data-row">
+            <div class="data-container" onclick="openDetails('temperature')">
+                <canvas id="temperatureChart"></canvas>
+                <p id="temperature">Temperature: Loading...</p>
+            </div>
+            <div class="data-container" onclick="openDetails('turbidity')">
+                <canvas id="turbidityChart"></canvas>
+                <p id="turbidity">Turbidity: Loading...</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Created by Adarsh Srivaatav, Arpit Chaturvedi, Abhinandan, Adarika</p>
+        </div>
     </div>
 </body>
 </html>
