@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://wallpapers.com/images/featured/cool-water-qgqkjtpwnoxock9u.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header div {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content {
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.overall-quality {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.data-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 45%;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.data-container:hover {
+    transform: scale(1.05); /* Slightly enlarge the container */
+}
+
+canvas {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.data-container p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.quality {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+    .data-container {
+        width: 100%;
+    }
+    .data-row {
+        flex-direction: column;
+    }
+}
